@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body class="grid place-content-center h-screen">
+<img src="./images/bg-pattern-top.svg" alt="top" class="absolute top-0 -left-1/2 -z-10">
+<img src="./images/bg-pattern-bottom.svg" alt="bottom" class="absolute bottom-0 -right-1/2 -z-10">
+<div class="w-72 rounded-xl shadow-lg">
+    <div class="h-32 rounded-t-lg relative" style="background: url('./images/bg-pattern-card.svg')">
+        <img src="./images/image-victor.jpg" alt="victor"
+             class="rounded-full absolute -bottom-12 left-1/2 -translate-x-1/2">
+    </div>
+    <div class="flex flex-col bg-white pt-16 pb-6 px-10 items-center justify-center border-b">
+        <div class="flex items-center mb-2">
+            <h1 class="text-xl capitalize mr-3 font-bold">victor crest</h1>
+            <span class="text-lg text-gray-400">26</span>
+        </div>
+        <p class="capitalize text-gray-400 text-sm">london</p>
+    </div>
+    <div class="flex items-center justify-between px-10 bg-white py-6 rounded-b-lg">
+        <div class="flex flex-col items-center">
+            <p class="text-lg uppercase font-bold">80k</p>
+            <p class="text-sm capitalize">followers</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <p class="text-lg uppercase font-bold">803k</p>
+            <p class="text-sm capitalize">likes</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <p class="text-lg uppercase font-bold">1.4k</p>
+            <p class="text-sm capitalize">photos</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
